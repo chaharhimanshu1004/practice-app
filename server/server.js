@@ -10,5 +10,6 @@ app.use(cors());
 
 app.use('/auth',userRoute);
 
+
 mongoose.connect("mongodb+srv://practiceapp:himanshu12@cluster0.ixs7cc5.mongodb.net/Cluster0?retryWrites=true&w=majority").then(console.log('db connected')).catch((err)=>console.log('db connection failed'));
 app.listen(3003,()=>console.log("Server started"));
