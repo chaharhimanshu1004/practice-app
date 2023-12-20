@@ -30,6 +30,7 @@ router.post("/login",async(req,res)=>{
     if(!isValidPassword){
         return res.json({message:"Password doesn't match"})
     }
+    // when you logged in -- you send a token along with a userid
     const token = jwt.sign({id:user._id},"secret");
     res.json({token,userID:user._id});
 

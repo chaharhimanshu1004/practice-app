@@ -4,7 +4,6 @@ const mongoose = require('mongoose');
 const app = express();
 const userRoute = require('./src/routes/userRoute')
 
-
 app.use(express.json());
 app.use(cors());
 
