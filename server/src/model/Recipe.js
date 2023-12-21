@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 const RecipeSchema = new mongoose.Schema({
     name:{
         type:String,
-        required:true,
+        required:[true,"Name of recipe is required"],
     },
     ingredients:[{
         type:String,
